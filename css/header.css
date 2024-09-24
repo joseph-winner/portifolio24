@@ -1,0 +1,162 @@
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+}
+
+header{
+    background-image: url("../img/bg.87635d9.webp");
+    background-color: var(--dark)
+}
+.nav-container .logo{
+    color: #fff;
+    padding: 25px;
+}
+
+.nav-container{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 15px;
+    margin: 0px 25px;
+}
+
+.nav-items{
+    margin-left: auto;
+}
+
+.nav-items ul{
+    list-style: none;
+}
+
+.nav-items ul li{
+    display: inline-block;
+    padding: 10px;
+    margin-right: 10px;
+}
+.nav-items ul li a{
+    text-decoration: none;
+    color: #f0f0f0;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.header{
+    margin: 20px 50px;
+    padding: 35px;
+}
+
+
+.start{
+    color: #988e9f;
+    font-size: 18px;
+    font-weight: 300;
+    margin-left: 20px;
+}
+
+body .timeline{
+    position: fixed;
+    top: 0px;
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: var(--indigo);
+    z-index: 100;
+}
+
+.header-container{
+    position: relative;
+}
+
+.header-container .bullet-start{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-left: -4px;
+    background-color: #f0f0f0;
+    border: 2px solid var(--indigo);
+    z-index: 1000;
+}
+
+.start-desc{
+    margin-left: 20px;
+    color: #f0f0f0;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.start-desc h2{
+    font-size: 62px;
+    max-width: 600px;
+    margin-bottom: 15px;
+}
+
+.start-desc .header-name{
+    color: #5918DF;
+}
+.more{
+    color: #988e9f;
+    font-size: 18px;
+    font-weight: 300;
+    margin-left: 20px;
+    padding-bottom: 80px;
+}
+
+.header-container .scroll-indicator{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    margin-left: -26px;
+    z-index: 1000;
+    bottom: 0px;
+}
+
+svg{
+    width: 15px;
+    z-index: 1000;
+    fill: var(--light);
+}
+.scroll-indicator span{
+    display: inline-block;
+    color: var(--purple);
+    transform: rotate(90deg);
+    font-size: 14px;
+    font-weight: 700;
+    z-index: 1000;
+    margin-left: -2px;
+}

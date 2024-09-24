@@ -1,0 +1,167 @@
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+main{
+    margin-top: -20px;
+    background-color: #212529;
+}
+
+.work-section{
+    margin-top: 30px;
+}
+
+.work-card {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+    color: white; 
+    border-radius: 8px;
+    transform: skew(-10deg);
+    transition: 0.3s ease-in-out;
+    z-index: 100;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.work-card:hover{
+    transform: skew(-15deg);
+}
+
+.work-card img {
+    width: 100%;
+    height: auto;
+}
+
+.work-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); 
+    z-index: 1;
+}
+
+.work-card .work-card-desc {
+    position: absolute;
+    z-index: 2;
+    padding: 10px;
+    left: 0;
+    bottom: 0;
+}
+
+.work-card-desc h2{
+    border-bottom: 2px solid #fff;
+    padding-bottom: 8px;
+    width: 150%;
+    max-width: 60%;
+}
+
+.work-card-desc .work-card-no{
+    margin-top: 10px;
+    color: rgba(255,255,255,0.6);
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+}
+
+.work-rows {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 25px;
+}
+
+.work-rows > div:nth-child(2) {
+    margin-top: 300px; /* Adjust this value as needed */
+}
+
+
+.work-rows-2 .work-card {
+    width: 420px;
+}
+
+.work-rows-2{
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+}
+
+.work-section-2{
+    margin-top: 60px;
+}
+
+.work-section-3{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width:767px){
+    .work-rows, .work-rows-2, .work-rows-3{
+        flex-direction: column;
+    }
+
+     .work-rows-2, .work-section-3{
+        justify-content: space-between;
+     }
+     .work-section-3{
+        justify-content: space-between;
+     }
+
+    .work-card {
+        transform: skew(0deg);
+        margin-left: 100px;
+    }
+    
+    .work-card:hover{
+        transform: skew(0deg);
+    }
+
+    .work-rows > div:nth-child(2) {
+        margin-top: 0px;
+    }
+    .work-rows-2 .work-card {
+        width: 300px;
+    }
+    
+}
