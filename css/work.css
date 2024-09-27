@@ -267,26 +267,6 @@ main {
 }
 
 /* ------------------------------------------------------------------------------- */
-/* 14121C */
-/* 6C6572 */
-
-/* .about-section {
-    font-family: 'Courier New', monospace;
-    background-color: #1e1e1e;
-    color: #d4d4d4;
-    padding: 20px;
-    line-height: 1.6;
-}
-/* .container {
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: #252526;
-    padding: 20px;
-    border-radius: 5px;
-} */ */
-h1 {
-    color: #569cd6;
-}
 .comment {
     color: var(--gray);
 }
@@ -304,17 +284,39 @@ h1 {
     color: #9cdcfe;
 }
 .function {
-    color: #dcdcaa;
+    color: var(--yellow);
+}
+.key-equal{
+  color: var(--red);
+}
+.this-key{
+  color: var(--danger);
 }
 .array {
     color: #4ec9b0;
 }
 pre {
-    background-color: #1e1e1e;
     padding: 10px;
     border-radius: 5px;
     overflow-x: auto;
     text-wrap: wrap;
     font-family: "Roboto Mono", monospace;
     color: var(--light);
+}
+
+.cursor {
+  display: inline-block;
+  width: 2px;
+  height: 20px;
+  background-color: #fff;
+  animation: blink 1s step-end infinite;
+  pointer-events: none;
+}
+@keyframes blink {
+  0%, 100% {
+      opacity: 1;
+  }
+  50% {
+      opacity: 0;
+  }
 }
