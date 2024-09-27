@@ -176,4 +176,9 @@ svg{
         margin-left: auto;
         font-size: 28px;
     }
+    .header{
+        margin: 20px 5px;
+        padding: 35px;
+    }
+    
 }
